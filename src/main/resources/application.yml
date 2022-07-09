@@ -1,6 +1,20 @@
 server:
   port: 8080
 spring:
+  thymeleaf:
+    #是否开启缓存
+    cache: true
+#    检查模板位置是否存在
+    check-template-location: true
+#    文件编码
+    encoding: utf-8
+#    文件位置
+    prefix: classpath:/templates/
+#    文件类型
+    servlet:
+      content-type: text/html
+#    模板文件后缀
+    suffix: .html
   application:
     name: reggie_take_out
   datasource:
